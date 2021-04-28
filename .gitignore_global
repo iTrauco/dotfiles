@@ -1,0 +1,113 @@
+G# iTrauco's .gitignore_global #
+###############################
+
+##############
+# TESTED OSs #
+##############
+# macOS Catalina v10.15.3
+# Ubuntu 20.04 x86_64
+# RHEL 8.1 x86_64
+# Kali Linux 2020.1b x86_64
+
+#########
+# USAGE #
+#########
+# 1. Place a copy if this at ~/.gitignore_global
+# 2. Open terminal and run `git config --global core.excludesfile ~/.gitignore_global`
+
+############
+# COMPILED #
+############
+*.com
+*.class
+*.dll
+*.so
+*.pyc
+*.pyo
+
+############
+# PACKAGES #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.msi
+
+######
+# vi #
+######
+*~
+
+###########
+# LOGS/DB #
+###########
+log/
+*.log
+*.sql
+*.sqlite
+
+########################
+# OPERATING SYSTEM(OS) #
+########################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.Thumbs.db
+
+##############
+# TEMP files #
+##############
+*.bak
+*.swp
+*.swo
+*~
+*#
+
+#######
+# IDE #
+#######
+.vscode
+.idea
+.iml
+*.sublime-workspace
+
+###########
+# JS/NODE #
+###########
+node_modules
+npm-debug.log
+
+##########
+# PYTHON #
+##########
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Li]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+.venv
+venv/
+
+# TERRAFORM #
+#############
+.terraform
+*.tfstate
+*.tfstate.backup
+
+
+#######
+# GCP #
+#######
+cloud-ops-cli-f8d9ca11d84f.json
+*client_secret.json
+*.googleapis.com-python.json
