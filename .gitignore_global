@@ -1,4 +1,5 @@
-G# iTrauco's .gitignore_global #
+###############################
+# iTrauco's .gitignore_global #
 ###############################
 
 ##############
@@ -98,16 +99,16 @@ pyvenv.cfg
 .venv
 venv/
 
+#############
 # TERRAFORM #
 #############
 .terraform
 *.tfstate
 *.tfstate.backup
 
-
 #######
 # GCP #
 #######
-cloud-ops-cli-f8d9ca11d84f.json
 *client_secret.json
 *.googleapis.com-python.json
+credentials.json
