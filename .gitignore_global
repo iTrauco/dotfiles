@@ -2,13 +2,16 @@
 # iTrauco's .gitignore_global #
 ###############################
 
-##############
-# TESTED OSs #
-##############
-# macOS Catalina v10.15.3
+#########
+# ABOUT #
+#########
+# macOS 10.15.x .gitignore_global downloaded for new branches optimized for dedicated debian development system
+
+#################
+# Linux(Debian) #
+#################
 # Ubuntu 20.04 x86_64
-# RHEL 8.1 x86_64
-# Kali Linux 2020.1b x86_64
+# 2021 Dell XPS Developer Edition
 
 #########
 # USAGE #
@@ -38,17 +41,27 @@
 *.tar
 *.zip
 *.msi
+*.war
+*.ear
 
 ######
 # vi #
 ######
 *~
 
-###########
-# LOGS/DB #
-###########
-log/
+########
+# LOGS #
+########
 *.log
+*.log
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+######
+# DB #
+######
 *.sql
 *.sqlite
 
@@ -109,6 +122,26 @@ venv/
 #######
 # GCP #
 #######
-*client_secret.json
-*.googleapis.com-python.json
-credentials.json
+.gcloudignore
+
+###########################
+# Google Apps Script(GAS) #
+##########################
+.gas/local.json
+.gas/remote.json
+gas-include/*
+
+##########
+# DOCKER #
+##########
+# .dockerignore # need to confirm
+
+#########
+# BUILD #
+#########
+build/
+
+#############
+# ATLASSIAN #
+#############
+atlassian-ide-plugin.xml
