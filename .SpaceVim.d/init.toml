@@ -62,7 +62,7 @@ default_height = 30
 
 [[layers]]
     name = 'core'
-    filetree_show_hidden = false 
+    filetree_show_hidden = true 
 
 [[layers]]
   name = "lang#javascript"
