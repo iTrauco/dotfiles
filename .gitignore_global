@@ -5,13 +5,12 @@
 #########
 # ABOUT #
 #########
-# macOS 10.15.x .gitignore_global downloaded for new branches optimized for dedicated debian development system
+# Ubuntu 20.04.xx .gitignore_global downloaded for new macOS Catalina 10.15.x specific dev system branch
 
 #################
-# Linux(Debian) #
+# macOS 10.15.x #
 #################
-# Ubuntu 20.04 x86_64
-# 2021 Dell XPS Developer Edition
+# Tested on macOS Catalina 10.15.x
 
 #########
 # USAGE #
