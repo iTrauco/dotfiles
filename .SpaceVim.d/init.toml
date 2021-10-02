@@ -11,7 +11,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "onedark"
+    colorscheme = "OceanicNext"
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
@@ -90,17 +90,14 @@ merged = false
 repo = 'plasticboy/vim-markdown'
 merged = false
 
+# add custom_plugins: https://github.com/mhartington/oceanic-next
+[[custom_plugins]]
+  repo = "mhartington/oceanic-next"
+  merged = 0
+
 # Plugins for optmized NodeJS vim development
 # vim-polyglot 2021-06-07 
-[[custom_plugins]]
-  name = "sheerun/vim-polyglot"
-  merged = false
-
-
-
-#[[layers]]
-#  name = "ctrlspace"
-#  iautosave-workspaces = true
-#  enable-spacevim-styled-keys = false
-
+#[[custom_plugins]]
+#  name = "sheerun/vim-polyglot"
+#  merged = false
 
