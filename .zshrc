@@ -102,9 +102,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-# terraform alias
+# terraform aliasess
 alias tfd='terraform destroy -auto-approve'
 
 alias tfp='terraform plan'
 
 alias tfa='terraform apply -auto-approve'
+
+alias tfmt='terraform fmt -recursive'
+
+alias tfv='terraform validate'
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
