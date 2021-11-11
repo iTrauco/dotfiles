@@ -120,8 +120,16 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 
 
 # SpaceVim Workflow Aliases
-alias svinit='vim ~/.SpaceVim.d/init.toml'
+alias svtoml='vim ~/.SpaceVim.d/init.toml'
 alias svcust='vim ~/.SpaceVim.d/autoload/custom_init.vim'
 
 # Shell Aliase
-alias zshload='source ~/.zshrc'
+alias zshinit='source ~/.zshrc'
+alias zshconfig='vim ~/.zshrc'
+
+# Python Local Dev Workflows
+alias pyv3nv='python3 -m venv venv && source venv/bin/activate'
+alias DiePy='deactivate'
+
+# Pydriller
+alias pyD='pip3 install pydriller'
