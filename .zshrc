@@ -103,11 +103,11 @@ source $ZSH/oh-my-zsh.sh
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # terraform aliasess
-alias tfd='terraform destroy -auto-approve'
+alias tfd='terraform init && terraform get &&  terraform destroy -auto-approve'
 
-alias tfp='terraform plan'
+alias tfp='terraform init && terraform get && terraform plan'
 
-alias tfa='terraform apply -auto-approve'
+alias tfa='terraform init && terraform get && terraform apply -auto-approve'
 
 alias tfmt='terraform fmt -recursive'
 
