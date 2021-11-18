@@ -100,36 +100,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
-# terraform aliasess
-alias tfd='terraform init && terraform get &&  terraform destroy -auto-approve'
-
-alias tfp='terraform init && terraform get && terraform plan'
-
-alias tfa='terraform init && terraform get && terraform apply -auto-approve'
-
-alias tfmt='terraform fmt -recursive'
-
-alias tfv='terraform validate'
-
-#
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
-
-
-
-# SpaceVim Workflow Aliases
-alias svtoml='vim ~/.SpaceVim.d/init.toml'
-alias svcust='vim ~/.SpaceVim.d/autoload/custom_init.vim'
-
-# Shell Aliase
-alias zshinit='source ~/.zshrc'
-alias zshconfig='vim ~/.zshrc'
-
-# Python Local Dev Workflows
-alias pyv3nv='python3 -m venv venv && source venv/bin/activate'
-alias DiePy='deactivate'
-
-# Pydriller
-alias pyD='pip3 install pydriller'
