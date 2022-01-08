@@ -1,3 +1,6 @@
+
+
+  
 ###############################
 # iTrauco's .gitignore_global #
 ###############################
@@ -144,3 +147,8 @@ build/
 # ATLASSIAN #
 #############
 atlassian-ide-plugin.xml
+
+
+############
+# DOTFILES #
+############

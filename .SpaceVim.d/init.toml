@@ -26,7 +26,7 @@
     filetree_direction = "left"
     filemanager = "nerdtree"
     enable_ycm = false
-    autocomplete_method = "completor"
+# autocomplete_method = "deoplete"
     bootstrap_before = "custom_init#before"
 
 # Enable autocomplete layer
@@ -100,4 +100,3 @@ merged = false
 #[[custom_plugins]]
 #  name = "sheerun/vim-polyglot"
 #  merged = false
-

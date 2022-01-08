@@ -1,4 +1,4 @@
-# terraform aliasess
+
 alias tfd='terraform init && terraform get &&  terraform destroy -auto-approve'
 
 alias tfp='terraform init && terraform get && terraform plan'

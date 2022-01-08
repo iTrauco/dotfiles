@@ -19,4 +19,3 @@ alias zshconf='vim ~/.zshrc'
 #
 # GREP
 # Shell Aliase
-
