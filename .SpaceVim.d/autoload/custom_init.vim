@@ -10,6 +10,11 @@ endf
 
 
 function! custom_init#before() abort
+    let g:GPGPreferArmor=1
+    let g:GPGDefaultRecipients=["GnuPG ID here"]
+endf
+
+function! custom_init#before() abort
     let g:NERDTreeGitStatusPorcelainVersion = 1
     let g:vista_sidebar_position = 'vertical topleft'
     let g:vista_default_executive = 'coc'

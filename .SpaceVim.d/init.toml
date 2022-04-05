@@ -95,6 +95,10 @@ merged = false
   repo = "mhartington/oceanic-next"
   merged = 0
 
+# add custom_plugins: https://github.com/mhartington/oceanic-next
+[[custom_plugins]]
+  repo = "jamessan/vim-gnupg"
+  merged = 0
 # Plugins for optmized NodeJS vim development
 # vim-polyglot 2021-06-07 
 #[[custom_plugins]]
