@@ -99,8 +99,11 @@ merged = false
 [[custom_plugins]]
   repo = "jamessan/vim-gnupg"
   merged = 0
-# Plugins for optmized NodeJS vim development
-# vim-polyglot 2021-06-07 
-#[[custom_plugins]]
-#  name = "sheerun/vim-polyglot"
-#  merged = false
+# yaml plugins 2022-08-03
+[[custom_plugins]]
+  repo = "dense-analysis/ale"
+  merged = false 
+
+[[custom_plugins]]
+  repo = "Yggdroot/indentLine"
+  merged = false 

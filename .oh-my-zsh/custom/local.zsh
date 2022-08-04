@@ -3,8 +3,10 @@
 # Local dev system  aliases
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # ZSH 
-alias zshinit='source ~/.zshrc'
-alias zshconf='vim ~/.zshrc'
+alias zinit='source ~/.zshrc'
+alias zcfg='vim ~/.zshrc'
+
+alias ddsh='find . -type f ! -iname "*.sh" -delete'
 
 #gnuPG-encrypted files
 export GPG_TTY=$(tty)

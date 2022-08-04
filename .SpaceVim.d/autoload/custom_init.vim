@@ -2,6 +2,16 @@ function! custom_init#before() abort
     set mouse=r
 endf 
 
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+set foldlevelstart=20
+
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+let g:ale_lint_on_text_changed = 'never'
+
+
 function! custom_init#before() abort
   let g:terraform_align=1
   let g:terraform_fold_sections=1
@@ -34,3 +44,11 @@ function! custom_init#before() abort
 
     let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'javascript']
 endf
+
+function! TabLcd()
+    let current_tab = tabpagenr()
+    tabdo lcd %:p:h
+    execute 'tabnext' current_tab
+endfunction
+
+nnoremap <silent> <leader>lcd :call TabLcd()<cr>
